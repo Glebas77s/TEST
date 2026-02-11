@@ -1,0 +1,33 @@
+
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 150px 1fr auto;
+    width: 900px;
+    height: 900px;
+    margin: 0 auto;
+    border: 5px solid black;
+
+}
+.block1 {
+    background: lightblue;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.block2 {
+    background: lawngreen;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+.block3 {
+    background: lightcoral;
+    grid-area: 2 / 2 / 3 / 4;
+}
+.block4 {
+    background: yellow;
+    grid-column: 1 / span 3;
+    grid-row: 3 / -1;
+}
